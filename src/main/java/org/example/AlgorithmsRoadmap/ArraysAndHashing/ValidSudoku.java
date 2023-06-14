@@ -2,7 +2,8 @@ package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
 import org.example.TestClass;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class ValidSudoku {
     /*
@@ -123,7 +124,7 @@ public class ValidSudoku {
                 {'.', '.', '.', '.', '8', '.', '.', '7', '9'},
         };
         boolean output1 = true;
-        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(isValidSudoku(input1)));
+        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(isValidSudokuD(input1)));
 
         /*
         Example 2:

@@ -161,6 +161,6 @@ public class RomanToInteger {
          */
         String s_5 = "D";
         System.out.println(romanToInt(s_5));
-        System.out.println(romanToIntOptimized(s_5));;
+        System.out.println(romanToIntOptimized(s_5));
     }
 }
