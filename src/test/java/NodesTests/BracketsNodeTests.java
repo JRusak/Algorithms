@@ -1,9 +1,10 @@
 package NodesTests;
 
-import org.example.Nodes.BracketsNode;
-import org.junit.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import org.example.Nodes.BracketsNode;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BracketsNodeTests {
 

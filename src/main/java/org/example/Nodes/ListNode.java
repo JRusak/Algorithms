@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListNode {
-    public int val;
+    public Integer val;
     public ListNode next;
-    public ListNode() {}
+
+    public ListNode() {
+    }
+
     public ListNode(int val) {
         this.val = val;
     }
@@ -16,10 +19,11 @@ public class ListNode {
         this.next = next;
     }
 
-    public void fillList(int[] nums) {
-        ListNode currentNode = this, lastNode = this;
+    public static ListNode fillList(int[] nums) {
+        ListNode node = new ListNode();
+        ListNode currentNode = node, lastNode = node;
 
-        for (int n: nums) {
+        for (int n : nums) {
             if (currentNode == null) {
                 currentNode = new ListNode(n);
                 lastNode.next = currentNode;
@@ -29,6 +33,12 @@ public class ListNode {
             lastNode = currentNode;
             currentNode = currentNode.next;
         }
+
+        return node;
+    }
+
+    public void addNodes(int[] nums) {
+        this.next = fillList(nums);
     }
 
     public int[] values() {
@@ -36,7 +46,8 @@ public class ListNode {
 
         ListNode node = this;
         while (node != null) {
-            result.add(node.val);
+            if (node.val != null)
+                result.add(node.val);
             node = node.next;
         }
 
