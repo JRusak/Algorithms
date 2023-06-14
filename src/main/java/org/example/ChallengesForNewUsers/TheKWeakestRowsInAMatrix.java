@@ -100,7 +100,7 @@ public class TheKWeakestRowsInAMatrix {
         };
         int k1 = 3;
         int[] output1 = {2,0,3};
-        TestClass.showOutput(1, Arrays.toString(output1), Arrays.toString(kWeakestRowsBetter(input1, k1)));
+        TestClass.showOutput(1, Arrays.toString(output1), Arrays.toString(kWeakestRows(input1, k1)));
 
         /*
         Example 2:

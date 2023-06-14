@@ -3,7 +3,6 @@ package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 import org.example.TestClass;
 
 import java.util.Arrays;
-import java.util.HashMap;
 
 public class ProductOfArrayExceptSelf {
     /*
@@ -77,6 +76,6 @@ public class ProductOfArrayExceptSelf {
          */
         int[] input2 = {-1, 1, 0, -3, 3};
         int[] output2 = {0, 0, 9, 0, 0};
-        TestClass.showOutput(2, Arrays.toString(output2), Arrays.toString(productExceptSelf(input2)));
+        TestClass.showOutput(2, Arrays.toString(output2), Arrays.toString(productExceptSelfOther(input2)));
     }
 }

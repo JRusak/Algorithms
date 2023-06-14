@@ -1,8 +1,6 @@
 package org.example;
 // Java code below
 
-import java.util.HashSet;
-
 public class TestClass {
 
     public static void showOutput(int exampleNumber, String expected, String actual) {
@@ -13,6 +11,5 @@ public class TestClass {
     }
 
     static public void main(String[] args) {
-        HashSet<Integer> s = new HashSet<>();
     }
 }

@@ -3,7 +3,6 @@ package org.example.ChallengesForNewUsers;
 import org.example.TestClass;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class FizzBuzz {
