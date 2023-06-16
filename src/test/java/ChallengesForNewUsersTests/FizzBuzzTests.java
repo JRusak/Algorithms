@@ -22,7 +22,9 @@ public class FizzBuzzTests {
     @Test
     void example2() {
         int input = 5;
-        List<String> output = List.of("1", "2", "Fizz", "4", "Buzz");
+        List<String> output = List.of(
+                "1", "2", "Fizz", "4", "Buzz"
+        );
 
         assertEquals(
                 output,
@@ -33,7 +35,11 @@ public class FizzBuzzTests {
     @Test
     void example3() {
         int input = 15;
-        List<String> output = List.of("1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz");
+        List<String> output = List.of(
+                "1", "2", "Fizz", "4", "Buzz",
+                "Fizz", "7", "8", "Fizz", "Buzz",
+                "11", "Fizz", "13", "14", "FizzBuzz"
+        );
 
         assertEquals(
                 output,

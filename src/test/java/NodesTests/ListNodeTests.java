@@ -3,10 +3,7 @@ package NodesTests;
 import org.example.Nodes.ListNode;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ListNodeTests {
 
@@ -37,7 +34,10 @@ public class ListNodeTests {
         );
         assertNull(listNode1.next);
 
-        ListNode listNode2 = new ListNode(5, listNode1);
+        ListNode listNode2 = new ListNode(
+                5,
+                listNode1
+        );
         assertEquals(
                 5,
                 listNode2.val.intValue()
@@ -89,9 +89,9 @@ public class ListNodeTests {
         int[] nums = {1, 2, 3, 4, 5};
         ListNode node = ListNode.fillList(nums);
 
-        assertEquals(
-                Arrays.toString(nums),
-                Arrays.toString(node.values())
+        assertArrayEquals(
+                nums,
+                node.values()
         );
     }
 
@@ -99,9 +99,9 @@ public class ListNodeTests {
     void getListNodeValues() {
         ListNode node = new ListNode();
 
-        assertEquals(
-                Arrays.toString(new int[]{}),
-                Arrays.toString(node.values())
+        assertArrayEquals(
+                new int[]{},
+                node.values()
         );
     }
 }
