@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class BracketsNodeTests {
 
     @Test
-    public void createBracketsNode() {
+    void createBracketsNode() {
         BracketsNode bracketsNode = new BracketsNode(
                 "()()(",
                 3,

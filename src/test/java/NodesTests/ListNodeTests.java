@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 public class ListNodeTests {
 
     @Test
-    public void createEmptyListNode() {
+    void createEmptyListNode() {
         ListNode listNode = new ListNode();
 
         assertNull(listNode.val);
@@ -19,7 +19,7 @@ public class ListNodeTests {
     }
 
     @Test
-    public void createListNodeWithValue() {
+    void createListNodeWithValue() {
         ListNode listNode = new ListNode(3);
         assertEquals(
                 3,
@@ -29,7 +29,7 @@ public class ListNodeTests {
     }
 
     @Test
-    public void createListNodeWithValueAndNext() {
+    void createListNodeWithValueAndNext() {
         ListNode listNode1 = new ListNode(3);
         assertEquals(
                 3,
@@ -49,7 +49,7 @@ public class ListNodeTests {
     }
 
     @Test
-    public void getListNodeFilledWithNums() {
+    void getListNodeFilledWithNums() {
         int[] nums = {1, 2, 3};
         ListNode node = ListNode.fillList(nums);
 
@@ -64,7 +64,7 @@ public class ListNodeTests {
     }
 
     @Test
-    public void addNewListNodesToOldListNode() {
+    void addNewListNodesToOldListNode() {
         ListNode oldListNode = new ListNode(5);
         int[] nums = {1, 2, 3};
         oldListNode.addNodes(nums);
@@ -85,7 +85,7 @@ public class ListNodeTests {
     }
 
     @Test
-    public void getListNodesValues() {
+    void getListNodesValues() {
         int[] nums = {1, 2, 3, 4, 5};
         ListNode node = ListNode.fillList(nums);
 
@@ -96,7 +96,7 @@ public class ListNodeTests {
     }
 
     @Test
-    public void getListNodeValues() {
+    void getListNodeValues() {
         ListNode node = new ListNode();
 
         assertEquals(

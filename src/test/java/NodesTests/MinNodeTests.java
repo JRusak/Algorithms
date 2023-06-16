@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 public class MinNodeTests {
 
     @Test
-    public void createMinNode() {
+    void createMinNode() {
         MinNode minNode = new MinNode(4, 2, null);
 
         assertEquals(

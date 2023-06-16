@@ -1,7 +1,5 @@
 package org.example.ChallengesForNewUsers;
 
-import org.example.TestClass;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,40 +31,5 @@ public class FizzBuzz {
         }
 
         return list;
-    }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: n = 3
-        Output: ["1","2","Fizz"]
-         */
-        int input1 = 3;
-        List<String> output1 = List.of("1", "2", "Fizz");
-
-        TestClass.showOutput(1, output1.toString(), fizzBuzz(input1).toString());
-
-        /*
-        Example 2:
-
-        Input: n = 5
-        Output: ["1","2","Fizz","4","Buzz"]
-         */
-        int input2 = 5;
-        List<String> output2 = List.of("1", "2", "Fizz", "4", "Buzz");
-
-        TestClass.showOutput(2, output2.toString(), fizzBuzz(input2).toString());
-
-        /*
-        Example 3:
-
-        Input: n = 15
-        Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
-         */
-        int input3 = 15;
-        List<String> output3 = List.of("1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz");
-
-        TestClass.showOutput(3, output3.toString(), fizzBuzz(input3).toString());
     }
 }
