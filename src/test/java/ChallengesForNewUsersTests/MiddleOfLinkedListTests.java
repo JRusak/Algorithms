@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 public class MiddleOfLinkedListTests {
 
     @Test
-    void example1() {
+    void oddLengthLinkedList() {
         /*
         Explanation: The middle node of the list is node 3.
          */
@@ -26,7 +26,7 @@ public class MiddleOfLinkedListTests {
     }
 
     @Test
-    void example2() {
+    void evenLengthLinkedList() {
         /*
         Explanation: Since the list has two middle nodes with
         values 3 and 4, we return the second one.

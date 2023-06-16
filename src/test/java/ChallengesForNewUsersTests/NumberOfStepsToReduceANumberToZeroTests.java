@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class NumberOfStepsToReduceANumberToZeroTests {
 
     @Test
-    void example1() {
+    void evenNumber() {
         /*
         Explanation:
         Step 1) 14 is even; divide by 2 and obtain 7.
@@ -29,16 +29,9 @@ public class NumberOfStepsToReduceANumberToZeroTests {
     }
 
     @Test
-    void example2() {
-        /*
-        Explanation:
-        Step 1) 8 is even; divide by 2 and obtain 4.
-        Step 2) 4 is even; divide by 2 and obtain 2.
-        Step 3) 2 is even; divide by 2 and obtain 1.
-        Step 4) 1 is odd; subtract 1 and obtain 0.
-         */
-        int input = 8;
-        int output = 4;
+    void oddNumber() {
+        int input = 123;
+        int output = 12;
 
         assertEquals(
                 output,
@@ -48,9 +41,9 @@ public class NumberOfStepsToReduceANumberToZeroTests {
     }
 
     @Test
-    void example3() {
-        int input = 123;
-        int output = 12;
+    void zeroNumber() {
+        int input = 0;
+        int output = 0;
 
         assertEquals(
                 output,
