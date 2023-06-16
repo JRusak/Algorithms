@@ -1,7 +1,5 @@
 package org.example.ChallengesForNewUsers;
 
-import org.example.TestClass;
-
 public class RansomNote {
     /*
     Given two strings ransomNote and magazine,
@@ -44,40 +42,5 @@ public class RansomNote {
         }
 
         return true;
-    }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: ransomNote = "a", magazine = "b"
-        Output: false
-        */
-        String ransomNote1 = "a", magazine1 = "b";
-        boolean output1 = false;
-        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(canConstruct(ransomNote1, magazine1)));
-        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(canConstructBest(ransomNote1, magazine1)));
-
-        /*
-        Example 2:
-
-        Input: ransomNote = "aa", magazine = "ab"
-        Output: false
-        */
-        String ransomNote2 = "aa", magazine2 = "ab";
-        boolean output2 = false;
-        TestClass.showOutput(2, String.valueOf(output2), String.valueOf(canConstruct(ransomNote2, magazine2)));
-        TestClass.showOutput(2, String.valueOf(output2), String.valueOf(canConstructBest(ransomNote2, magazine2)));
-
-        /*
-        Example 3:
-
-        Input: ransomNote = "aa", magazine = "aab"
-        Output: true
-         */
-        String ransomNote3 = "aa", magazine3 = "aab";
-        boolean output3 = true;
-        TestClass.showOutput(3, String.valueOf(output3), String.valueOf(canConstruct(ransomNote3, magazine3)));
-        TestClass.showOutput(3, String.valueOf(output3), String.valueOf(canConstructBest(ransomNote3, magazine3)));
     }
 }
