@@ -88,4 +88,44 @@ public class TheKWeakestRowsInAMatrixTests {
                         )
         );
     }
+
+    @Test
+    void rowsFullOfSoldiers() {
+        /*
+        Explanation:
+        The number of soldiers in each row is:
+        - Row 0: 3
+        - Row 1: 3
+        - Row 2: 3
+        - Row 3: 3
+        The rows ordered from weakest to strongest
+        are [0,1,2,3].
+         */
+        int[][] input = {
+                {1, 1, 1},
+                {1, 1, 1},
+                {1, 1, 1},
+                {1, 1, 1},
+        };
+        int k = 2;
+        int[] output = {0, 1};
+
+        assertArrayEquals(
+                output,
+                TheKWeakestRowsInAMatrix
+                        .kWeakestRows(
+                                input,
+                                k
+                        )
+        );
+
+        assertArrayEquals(
+                output,
+                TheKWeakestRowsInAMatrix
+                        .kWeakestRowsBetter(
+                                input,
+                                k
+                        )
+        );
+    }
 }
