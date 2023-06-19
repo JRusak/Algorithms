@@ -21,33 +21,4 @@ public class ContainsDuplicate {
         }
         return false;
     }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: nums = [1,2,3,1]
-        Output: true
-        */
-        int[] nums_1 = {1, 2, 3, 1};
-        System.out.println(containsDuplicate(nums_1));
-
-        /*
-        Example 2:
-
-        Input: nums = [1,2,3,4]
-        Output: false
-         */
-        int[] nums_2 = {1, 2, 3, 4};
-        System.out.println(containsDuplicate(nums_2));
-
-        /*
-        Example 3:
-
-        Input: nums = [1,1,1,3,3,4,3,2,4,2]
-        Output: true
-        */
-        int[] nums_3 = {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
-        System.out.println(containsDuplicate(nums_3));
-    }
 }
