@@ -1,9 +1,6 @@
 package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.TestClass;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class EncodeAndDecodeStrings {
@@ -41,11 +38,5 @@ public class EncodeAndDecodeStrings {
         }
 
         return result.toArray(new String[0]);
-    }
-
-    public static void main(String[] args) {
-        String[] input1 = {"lint", "code", "love", "you"};
-        String[] output1 = {"lint", "code", "love", "you"};
-        TestClass.showOutput(1, Arrays.toString(output1), Arrays.toString(decode(encode(input1))));
     }
 }
