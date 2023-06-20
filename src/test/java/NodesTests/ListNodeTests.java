@@ -49,7 +49,7 @@ public class ListNodeTests {
     }
 
     @Test
-    void getListNodeFilledWithNums() {
+    void fillList_NumsList_HeadListNode() {
         int[] nums = {1, 2, 3};
         ListNode node = ListNode.fillList(nums);
 
@@ -64,7 +64,15 @@ public class ListNodeTests {
     }
 
     @Test
-    void addNewListNodesToOldListNode() {
+    void fillList_EmptyNumsList_Null() {
+        int[] nums = {};
+        ListNode node = ListNode.fillList(nums);
+
+        assertNull(node);
+    }
+
+    @Test
+    void addNodes_OldNodeNewNums_NewNodesAddedToOldOne() {
         ListNode oldListNode = new ListNode(5);
         int[] nums = {1, 2, 3};
         oldListNode.addNodes(nums);
@@ -85,23 +93,37 @@ public class ListNodeTests {
     }
 
     @Test
-    void getListNodesValues() {
+    void addNodes_OldNodeEmptyNums_OldNode() {
+        ListNode oldListNode = new ListNode(5);
+        int[] nums = {};
+        oldListNode.addNodes(nums);
+
+        assertEquals(
+                5,
+                oldListNode.val.intValue()
+        );
+        ListNode node = oldListNode.next;
+        assertNull(node);
+    }
+
+    @Test
+    void getValues_ListNode_ValuesFromNodeToTheEndOfTheList() {
         int[] nums = {1, 2, 3, 4, 5};
         ListNode node = ListNode.fillList(nums);
 
         assertArrayEquals(
                 nums,
-                node.values()
+                node.getValues()
         );
     }
 
     @Test
-    void getListNodeValues() {
+    void getValues_EmptyListNode_EmptyNumsList() {
         ListNode node = new ListNode();
 
         assertArrayEquals(
                 new int[]{},
-                node.values()
+                node.getValues()
         );
     }
 }

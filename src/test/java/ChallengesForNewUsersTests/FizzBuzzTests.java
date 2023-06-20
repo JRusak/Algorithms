@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FizzBuzzTests {
 
     @Test
-    void inputEquals3() {
+    void fizzBuzz_3_ThirdStringIsFizz() {
         int input = 3;
         List<String> output = List.of("1", "2", "Fizz");
         assertEquals(
@@ -20,7 +20,7 @@ public class FizzBuzzTests {
     }
 
     @Test
-    void inputEquals5() {
+    void fizzBuzz_5_ThirdFizzFifthBuzz() {
         int input = 5;
         List<String> output = List.of(
                 "1", "2", "Fizz", "4", "Buzz"
@@ -33,7 +33,7 @@ public class FizzBuzzTests {
     }
 
     @Test
-    void inputEquals15() {
+    void fizzBuzz_15_FifteenthFizzBuzz() {
         int input = 15;
         List<String> output = List.of(
                 "1", "2", "Fizz", "4", "Buzz",
