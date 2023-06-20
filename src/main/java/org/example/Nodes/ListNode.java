@@ -20,28 +20,26 @@ public class ListNode {
     }
 
     public static ListNode fillList(int[] nums) {
-        ListNode node = new ListNode();
-        ListNode currentNode = node, lastNode = node;
+        ListNode head = null, lastNode = null;
 
         for (int n : nums) {
-            if (currentNode == null) {
-                currentNode = new ListNode(n);
-                lastNode.next = currentNode;
-            } else
-                currentNode.val = n;
-
-            lastNode = currentNode;
-            currentNode = currentNode.next;
+            if (lastNode == null) {
+                head = new ListNode(n);
+                lastNode = head;
+            } else {
+                lastNode.next = new ListNode(n);
+                lastNode = lastNode.next;
+            }
         }
 
-        return node;
+        return head;
     }
 
     public void addNodes(int[] nums) {
         this.next = fillList(nums);
     }
 
-    public int[] values() {
+    public int[] getValues() {
         List<Integer> result = new ArrayList<>();
 
         ListNode node = this;
@@ -51,6 +49,7 @@ public class ListNode {
             node = node.next;
         }
 
-        return result.stream().mapToInt(i -> i).toArray();
+        return result.stream()
+                .mapToInt(i -> i).toArray();
     }
 }
