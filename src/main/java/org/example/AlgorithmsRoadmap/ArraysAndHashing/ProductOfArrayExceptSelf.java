@@ -1,7 +1,5 @@
 package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.TestClass;
-
 import java.util.Arrays;
 
 public class ProductOfArrayExceptSelf {
@@ -20,7 +18,8 @@ public class ProductOfArrayExceptSelf {
     Constraints:
     2 <= nums.length <= 10^5
     -30 <= nums[i] <= 30
-    The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+    The product of any prefix or suffix of nums is
+    guaranteed to fit in a 32-bit integer.
      */
 
     public static int[] productExceptSelf(int[] nums) {
@@ -55,27 +54,5 @@ public class ProductOfArrayExceptSelf {
         }
 
         return result;
-    }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: nums = [1,2,3,4]
-        Output: [24,12,8,6]
-        */
-        int[] input1 = {1, 2, 3, 4};
-        int[] output1 = {24, 12, 8, 6};
-        TestClass.showOutput(1, Arrays.toString(output1), Arrays.toString(productExceptSelf(input1)));
-
-        /*
-        Example 2:
-
-        Input: nums = [-1,1,0,-3,3]
-        Output: [0,0,9,0,0]
-         */
-        int[] input2 = {-1, 1, 0, -3, 3};
-        int[] output2 = {0, 0, 9, 0, 0};
-        TestClass.showOutput(2, Arrays.toString(output2), Arrays.toString(productExceptSelfOther(input2)));
     }
 }
