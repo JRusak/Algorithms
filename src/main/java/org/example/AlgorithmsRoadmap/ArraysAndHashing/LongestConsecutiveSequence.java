@@ -1,8 +1,8 @@
 package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.TestClass;
-
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class LongestConsecutiveSequence {
     /*
@@ -71,38 +71,5 @@ public class LongestConsecutiveSequence {
         }
 
         return Math.max(maxLength, length);
-    }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: nums = [100,4,200,1,3,2]
-        Output: 4
-        Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
-        */
-        int[] input1 = {100, 4, 200, 1, 3, 2};
-        int output1 = 4;
-        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(longestConsecutiveBest(input1)));
-
-        /*
-        Example 2:
-
-        Input: nums = [0,3,7,2,5,8,4,6,0,1]
-        Output: 9
-         */
-        int[] input2 = {0, 3, 7, 2, 5, 8, 4, 6, 0, 1};
-        int output2 = 9;
-        TestClass.showOutput(2, String.valueOf(output2), String.valueOf(longestConsecutive(input2)));
-
-        /*
-        Example 3:
-
-        Input: nums = [1,2,0,1]
-        Output: 3
-         */
-        int[] input3 = {1, 2, 0, 1};
-        int output3 = 3;
-        TestClass.showOutput(3, String.valueOf(output3), String.valueOf(longestConsecutive(input3)));
     }
 }
