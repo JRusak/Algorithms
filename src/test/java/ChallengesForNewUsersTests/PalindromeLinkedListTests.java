@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class PalindromeLinkedListTests {
 
     @Test
-    void linkedListIsAPalindromeEvenLength() {
+    void isPalindrome_PalindromeLinkedListEvenLength_True() {
         int[] input = {1, 2, 2, 1};
         ListNode head = ListNode.fillList(input);
 
@@ -25,8 +25,8 @@ public class PalindromeLinkedListTests {
     }
 
     @Test
-    void linkedListIsAPalindromeOddLength() {
-        int[] input = {1, 2, 2, 1};
+    void isPalindrome_PalindromeLinkedListOddLength_True() {
+        int[] input = {1, 2, 3, 2, 1};
         ListNode head = ListNode.fillList(input);
 
         assertTrue(
@@ -40,7 +40,7 @@ public class PalindromeLinkedListTests {
     }
 
     @Test
-    void linkedListIsNotAPalindromeEvenLength() {
+    void isPalindrome_NotPalindromeLinkedListEvenLength_False() {
         int[] input = {1, 2};
         ListNode head = ListNode.fillList(input);
 
@@ -55,7 +55,7 @@ public class PalindromeLinkedListTests {
     }
 
     @Test
-    void linkedListIsNotAPalindromeOddLength() {
+    void isPalindrome_NotPalindromeLinkedListOddLength_False() {
         int[] input = {1, 2, 3};
         ListNode head = ListNode.fillList(input);
 

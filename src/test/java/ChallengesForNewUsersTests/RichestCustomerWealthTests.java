@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RichestCustomerWealthTests {
 
     @Test
-    void accounts2x3() {
+    void maximumWealth_TwoAccountsSameWealth_6() {
         /*
         Explanation:
         1st customer has wealth = 1 + 2 + 3 = 6
@@ -30,7 +30,7 @@ public class RichestCustomerWealthTests {
     }
 
     @Test
-    void accounts3x2() {
+    void maximumWealth_ThreeAccountsDifferentWealth_10() {
         /*
         Explanation:
         1st customer has wealth = 6
@@ -53,7 +53,7 @@ public class RichestCustomerWealthTests {
     }
 
     @Test
-    void accounts3x3() {
+    void maximumWealth_ThreeAccountsSameWealth_6() {
         /*
         Explanation:
         1st customer has wealth = 1 + 2 + 3 = 6

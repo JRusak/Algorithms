@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class RomanToIntegerTests {
 
     @Test
-    void tripleI() {
+    void romanToInt_TripleI_3() {
         /*
         Explanation: III = 3.
          */
@@ -28,7 +28,7 @@ public class RomanToIntegerTests {
     }
 
     @Test
-    void simpleBiggerNumber() {
+    void romanToInt_SimpleBiggerNumber_58() {
         /*
         Explanation: L = 50, V= 5, III = 3.
          */
@@ -48,7 +48,7 @@ public class RomanToIntegerTests {
     }
 
     @Test
-    void bigNumberWithSubtractions() {
+    void romanToInt_BigNumberWithSubtractions_1994() {
         /*
         Explanation: M = 1000, CM = 900, XC = 90 and
         IV = 4.
@@ -69,7 +69,7 @@ public class RomanToIntegerTests {
     }
 
     @Test
-    void anotherBigNumberWithSubtraction() {
+    void romanToInt_AnotherBigNumberWithSubtraction_1695() {
         /*
         Explanation: M = 1000, D = 500, C = 100,
         XC = 90 and V = 5.
@@ -90,7 +90,7 @@ public class RomanToIntegerTests {
     }
 
     @Test
-    void singleLetter() {
+    void romanToInt_SingleLetterD_500() {
         /*
         Explanation: D = 500.
          */

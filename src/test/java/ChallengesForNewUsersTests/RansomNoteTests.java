@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class RansomNoteTests {
 
     @Test
-    void emptyStrings() {
+    void canConstruct_EmptyStrings_True() {
         String ransomNote = "", magazine = "";
 
         assertTrue(
@@ -27,7 +27,7 @@ public class RansomNoteTests {
     }
 
     @Test
-    void equalLength() {
+    void canConstruct_SameLettersEqualLength_True() {
         String ransomNote = "bab", magazine = "abb";
 
         assertTrue(
@@ -45,7 +45,7 @@ public class RansomNoteTests {
     }
 
     @Test
-    void shortNoteFromLongMagazine() {
+    void canConstruct_ShortNoteFromLongMagazine_True() {
         String ransomNote = "red", magazine = "direction";
 
         assertTrue(
@@ -63,7 +63,7 @@ public class RansomNoteTests {
     }
 
     @Test
-    void longNoteFromShortMagazine() {
+    void canConstruct_LongNoteFromShortMagazine_False() {
         String ransomNote = "reed", magazine = "red";
 
         assertFalse(

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 public class TheKWeakestRowsInAMatrixTests {
 
     @Test
-    void differentNumberOfSoldiersInEachRow() {
+    void kWeakestRows_DifferentNumberOfSoldiersInEachRow_Rows() {
         /*
         Explanation:
         The number of soldiers in each row is:
@@ -50,7 +50,7 @@ public class TheKWeakestRowsInAMatrixTests {
     }
 
     @Test
-    void sameNumberOfSoldiersInManyRows() {
+    void kWeakestRows_SameNumberOfSoldiersInManyRows_Rows() {
         /*
         Explanation:
         The number of soldiers in each row is:
@@ -90,7 +90,7 @@ public class TheKWeakestRowsInAMatrixTests {
     }
 
     @Test
-    void rowsFullOfSoldiers() {
+    void kWeakestRows_RowsFullOfSoldiers_Rows() {
         /*
         Explanation:
         The number of soldiers in each row is:

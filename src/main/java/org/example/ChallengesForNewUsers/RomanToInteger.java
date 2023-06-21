@@ -47,17 +47,27 @@ public class RomanToInteger {
     in the range [1, 3999].
      */
     public static int romanToInt(String s) {
-        HashMap<Character, Integer> normalMap = new HashMap<>() {{
-            put('I', 1); put('V', 5); put('X', 10); put('L', 50);
-            put('C', 100); put('D', 500); put('M', 1000);
-        }};
+        HashMap<Character, Integer> normalMap =
+                new HashMap<>() {{
+                    put('I', 1);
+                    put('V', 5);
+                    put('X', 10);
+                    put('L', 50);
+                    put('C', 100);
+                    put('D', 500);
+                    put('M', 1000);
+                }};
 
         int subtractStringLength = 2;
-        HashMap<String, Integer> subtractMap = new HashMap<>() {{
-            put("IV", 4); put("IX", 9);
-            put("XL", 40); put("XC", 90);
-            put("CD", 400); put("CM", 900);
-        }};
+        HashMap<String, Integer> subtractMap =
+                new HashMap<>() {{
+                    put("IV", 4);
+                    put("IX", 9);
+                    put("XL", 40);
+                    put("XC", 90);
+                    put("CD", 400);
+                    put("CM", 900);
+                }};
 
         int result = 0;
 
@@ -70,14 +80,17 @@ public class RomanToInteger {
         StringBuilder sb = new StringBuilder();
         int i = 0;
         while (i <= s.length() - subtractStringLength) {
-            for (int j = 0; j < subtractStringLength; j++) {
+            for (int j = 0;
+                 j < subtractStringLength;
+                 j++) {
                 sb.append(s.charAt(i + j));
             }
 
-            Integer v = subtractMap.get(sb.toString());
+            Integer v = subtractMap
+                    .get(sb.toString());
 
             if (v == null && i == s.length() - subtractStringLength) {
-                for(char c : sb.toString().toCharArray())
+                for (char c : sb.toString().toCharArray())
                     result += normalMap.get(c);
                 break;
             } else if (v == null) {
