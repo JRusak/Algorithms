@@ -1,6 +1,9 @@
 package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 public class GroupAnagrams {
     /*
@@ -57,37 +60,5 @@ public class GroupAnagrams {
 
         result.addAll(map.values());
         return result;
-    }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: strs = ["eat","tea","tan","ate","nat","bat"]
-        Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
-        */
-        String[] strs1 = {"eat","tea","tan","ate","nat","bat"};
-        System.out.println(groupAnagramsFirstIdea(strs1));
-        System.out.println((groupAnagramsOptimized(strs1)));
-
-        /*
-        Example 2:
-
-        Input: strs = [""]
-        Output: [[""]]
-        */
-        String[] strs2 = {""};
-        System.out.println(groupAnagramsFirstIdea(strs2));
-        System.out.println(groupAnagramsOptimized(strs2));
-
-        /*
-        Example 3:
-
-        Input: strs = ["a"]
-        Output: [["a"]]
-        */
-        String[] strs3 = {"a"};
-        System.out.println(groupAnagramsFirstIdea(strs3));
-        System.out.println(groupAnagramsOptimized(strs3));
     }
 }
