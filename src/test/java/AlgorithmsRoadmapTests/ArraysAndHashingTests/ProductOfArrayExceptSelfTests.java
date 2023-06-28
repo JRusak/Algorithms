@@ -3,7 +3,7 @@ package AlgorithmsRoadmapTests.ArraysAndHashingTests;
 import org.example.AlgorithmsRoadmap.ArraysAndHashing.ProductOfArrayExceptSelf;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class ProductOfArrayExceptSelfTests {
 
@@ -12,13 +12,13 @@ public class ProductOfArrayExceptSelfTests {
         int[] nums = {1, 2, 3, 4};
         int[] products = {24, 12, 8, 6};
 
-        assertEquals(
+        assertArrayEquals(
                 products,
                 ProductOfArrayExceptSelf
                         .productExceptSelf(nums)
         );
 
-        assertEquals(
+        assertArrayEquals(
                 products,
                 ProductOfArrayExceptSelf
                         .productExceptSelfOther(nums)
@@ -30,13 +30,13 @@ public class ProductOfArrayExceptSelfTests {
         int[] nums = {-1, 1, 0, -3, 3};
         int[] products = {0, 0, 9, 0, 0};
 
-        assertEquals(
+        assertArrayEquals(
                 products,
                 ProductOfArrayExceptSelf
                         .productExceptSelf(nums)
         );
 
-        assertEquals(
+        assertArrayEquals(
                 products,
                 ProductOfArrayExceptSelf
                         .productExceptSelfOther(nums)

@@ -1,7 +1,5 @@
 package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.TestClass;
-
 import java.util.*;
 
 public class TopKFrequentElements {
@@ -38,6 +36,7 @@ public class TopKFrequentElements {
         return result;
     }
 
+    @SuppressWarnings("unchecked")
     public static int[] topKFrequentOptimized(int[] nums, int k) {
         int[] result = new int[k];
         List<Integer>[] bucket = new ArrayList[nums.length + 1];
@@ -62,44 +61,5 @@ public class TopKFrequentElements {
                 }
 
         return result;
-    }
-
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: nums = [1,1,1,2,2,3], k = 2
-        Output: [1,2]
-         */
-        int[] nums1 = {1,1,1,2,2,3};
-        int k1 = 2;
-        int[] output1 = {1,2};
-        TestClass.showOutput(1, Arrays.toString(output1), Arrays.toString(topKFrequent(nums1, k1)));
-        TestClass.showOutput(1, Arrays.toString(output1), Arrays.toString(topKFrequentOptimized(nums1, k1)));
-
-        /*
-        Example 2:
-
-        Input: nums = [1], k = 1
-        Output: [1]
-         */
-        int[] nums2 = {1};
-        int k2 = 1;
-        int[] output2 = {1};
-        TestClass.showOutput(2, Arrays.toString(output2), Arrays.toString(topKFrequent(nums2, k2)));
-        TestClass.showOutput(2, Arrays.toString(output2), Arrays.toString(topKFrequentOptimized(nums2, k2)));
-
-        /*
-        Example 3:
-
-        Input: nums = [1,2], k = 2
-        Output: [1,2]
-         */
-        int[] nums3 = {1,2};
-        int k3 = 2;
-        int[] output3 = {1,2};
-        TestClass.showOutput(3, Arrays.toString(output3), Arrays.toString(topKFrequent(nums3, k3)));
-        TestClass.showOutput(3, Arrays.toString(output3), Arrays.toString(topKFrequentOptimized(nums3, k3)));
     }
 }
