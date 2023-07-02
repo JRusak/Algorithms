@@ -27,7 +27,7 @@ public class TopKFrequentElements {
                 map.put(n, 1);
         }
 
-        for (int i = 0; i < k; i++) {
+        for (int i = 0; i < k && !map.isEmpty(); i++) {
             int key = Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey();
             result[i] = key;
             map.remove(key);
@@ -52,12 +52,12 @@ public class TopKFrequentElements {
         }
 
         int index = 0;
-        for (int i = nums.length; i >= 0; i--)
+        for (int i = nums.length; i >= 0 && index != k; i--)
             if (bucket[i] != null)
-                for (int n: bucket[i]) {
+                for (int n : bucket[i]) {
                     result[index++] = n;
                     if (index == k)
-                        return result;
+                        break;
                 }
 
         return result;
