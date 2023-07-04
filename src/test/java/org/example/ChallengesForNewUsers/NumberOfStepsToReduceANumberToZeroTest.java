@@ -1,11 +1,10 @@
-package ChallengesForNewUsersTests;
+package org.example.ChallengesForNewUsers;
 
-import org.example.ChallengesForNewUsers.NumberOfStepsToReduceANumberToZero;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class NumberOfStepsToReduceANumberToZeroTests {
+public class NumberOfStepsToReduceANumberToZeroTest {
 
     @Test
     void numberOfSteps_EvenNumber14_6() {

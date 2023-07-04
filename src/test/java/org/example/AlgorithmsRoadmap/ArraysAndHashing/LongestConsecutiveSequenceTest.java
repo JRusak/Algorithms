@@ -1,11 +1,10 @@
-package AlgorithmsRoadmapTests.ArraysAndHashingTests;
+package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.AlgorithmsRoadmap.ArraysAndHashing.LongestConsecutiveSequence;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class LongestConsecutiveSequenceTests {
+public class LongestConsecutiveSequenceTest {
 
     @Test
     void longestConsecutive_Nums_4() {

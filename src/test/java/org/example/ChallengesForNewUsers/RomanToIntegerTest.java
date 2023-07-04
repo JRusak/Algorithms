@@ -1,11 +1,10 @@
-package ChallengesForNewUsersTests;
+package org.example.ChallengesForNewUsers;
 
-import org.example.ChallengesForNewUsers.RomanToInteger;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RomanToIntegerTests {
+public class RomanToIntegerTest {
 
     @Test
     void romanToInt_TripleI_3() {

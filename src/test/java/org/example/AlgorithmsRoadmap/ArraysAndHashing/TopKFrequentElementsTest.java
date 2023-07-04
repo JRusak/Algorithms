@@ -1,11 +1,10 @@
-package AlgorithmsRoadmapTests.ArraysAndHashingTests;
+package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.AlgorithmsRoadmap.ArraysAndHashing.TopKFrequentElements;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class TopKFrequentElementsTests {
+public class TopKFrequentElementsTest {
 
     @Test
     void topKFrequent_SortedNums_Elements() {

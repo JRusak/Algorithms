@@ -1,13 +1,12 @@
-package ChallengesForNewUsersTests;
+package org.example.ChallengesForNewUsers;
 
-import org.example.ChallengesForNewUsers.PalindromeLinkedList;
 import org.example.Nodes.ListNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class PalindromeLinkedListTests {
+public class PalindromeLinkedListTest {
 
     @Test
     void isPalindrome_PalindromeLinkedListEvenLength_True() {

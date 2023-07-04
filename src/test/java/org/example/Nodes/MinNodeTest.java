@@ -1,12 +1,11 @@
-package NodesTests;
+package org.example.Nodes;
 
-import org.example.Nodes.MinNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
-public class MinNodeTests {
+public class MinNodeTest {
 
     @Test
     void createMinNode() {

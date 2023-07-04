@@ -1,11 +1,10 @@
-package ChallengesForNewUsersTests;
+package org.example.ChallengesForNewUsers;
 
-import org.example.ChallengesForNewUsers.RichestCustomerWealth;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class RichestCustomerWealthTests {
+public class RichestCustomerWealthTest {
 
     @Test
     void maximumWealth_TwoAccountsSameWealth_6() {

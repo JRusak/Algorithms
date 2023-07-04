@@ -1,11 +1,10 @@
-package ChallengesForNewUsersTests;
+package org.example.ChallengesForNewUsers;
 
-import org.example.ChallengesForNewUsers.TheKWeakestRowsInAMatrix;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class TheKWeakestRowsInAMatrixTests {
+public class TheKWeakestRowsInAMatrixTest {
 
     @Test
     void kWeakestRows_DifferentNumberOfSoldiersInEachRow_Rows() {

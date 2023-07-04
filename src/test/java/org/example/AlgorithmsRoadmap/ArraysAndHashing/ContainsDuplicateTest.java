@@ -1,12 +1,11 @@
-package AlgorithmsRoadmapTests.ArraysAndHashingTests;
+package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.AlgorithmsRoadmap.ArraysAndHashing.ContainsDuplicate;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class ContainsDuplicateTests {
+public class ContainsDuplicateTest {
 
     @Test
     void containsDuplicate_NumsWithDuplicate_True() {

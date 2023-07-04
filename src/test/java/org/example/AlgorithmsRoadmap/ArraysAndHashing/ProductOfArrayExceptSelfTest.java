@@ -1,11 +1,10 @@
-package AlgorithmsRoadmapTests.ArraysAndHashingTests;
+package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.AlgorithmsRoadmap.ArraysAndHashing.ProductOfArrayExceptSelf;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class ProductOfArrayExceptSelfTests {
+public class ProductOfArrayExceptSelfTest {
 
     @Test
     void productExceptSelf_PositiveNums_Products() {

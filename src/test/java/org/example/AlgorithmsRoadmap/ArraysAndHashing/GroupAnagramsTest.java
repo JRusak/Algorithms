@@ -1,13 +1,12 @@
-package AlgorithmsRoadmapTests.ArraysAndHashingTests;
+package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.AlgorithmsRoadmap.ArraysAndHashing.GroupAnagrams;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class GroupAnagramsTests {
+public class GroupAnagramsTest {
 
     @Test
     void groupAnagrams_ManyStrings_AnagramGroups() {

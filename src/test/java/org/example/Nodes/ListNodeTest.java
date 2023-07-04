@@ -1,11 +1,10 @@
-package NodesTests;
+package org.example.Nodes;
 
-import org.example.Nodes.ListNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ListNodeTests {
+public class ListNodeTest {
 
     @Test
     void createEmptyListNode() {

@@ -1,12 +1,11 @@
-package AlgorithmsRoadmapTests.ArraysAndHashingTests;
+package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.AlgorithmsRoadmap.ArraysAndHashing.EncodeAndDecodeStrings;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class EncodeAndDecodeStringsTests {
+public class EncodeAndDecodeStringsTest {
 
     @Test
     void encode_Strings_EncodedStrings() {

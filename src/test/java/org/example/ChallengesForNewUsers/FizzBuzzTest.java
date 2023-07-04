@@ -1,13 +1,12 @@
-package ChallengesForNewUsersTests;
+package org.example.ChallengesForNewUsers;
 
-import org.example.ChallengesForNewUsers.FizzBuzz;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FizzBuzzTests {
+public class FizzBuzzTest {
 
     @Test
     void fizzBuzz_3_ThirdStringIsFizz() {

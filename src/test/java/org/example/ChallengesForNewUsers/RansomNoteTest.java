@@ -1,12 +1,11 @@
-package ChallengesForNewUsersTests;
+package org.example.ChallengesForNewUsers;
 
-import org.example.ChallengesForNewUsers.RansomNote;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class RansomNoteTests {
+public class RansomNoteTest {
 
     @Test
     void canConstruct_EmptyStrings_True() {

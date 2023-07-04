@@ -1,12 +1,11 @@
-package NodesTests;
+package org.example.Nodes;
 
 
-import org.example.Nodes.BracketsNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class BracketsNodeTests {
+public class BracketsNodeTest {
 
     @Test
     void createBracketsNode() {

@@ -1,12 +1,11 @@
-package ChallengesForNewUsersTests;
+package org.example.ChallengesForNewUsers;
 
-import org.example.ChallengesForNewUsers.MiddleOfLinkedList;
 import org.example.Nodes.ListNode;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
-public class MiddleOfLinkedListTests {
+public class MiddleOfLinkedListTest {
 
     @Test
     void middleNode_OddLengthLinkedList_MiddleNode() {
