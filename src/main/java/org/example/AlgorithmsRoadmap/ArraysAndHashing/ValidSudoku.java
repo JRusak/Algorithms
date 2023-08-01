@@ -1,7 +1,5 @@
 package org.example.AlgorithmsRoadmap.ArraysAndHashing;
 
-import org.example.TestClass;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -26,6 +24,7 @@ public class ValidSudoku {
     board[i][j] is a digit 1-9 or '.'.
      */
 
+    @SuppressWarnings("unchecked")
     public static boolean isValidSudoku(char[][] board) {
         Set<Character> rowSet;
         Set<Character> colSet;
@@ -64,6 +63,7 @@ public class ValidSudoku {
         return true;
     }
 
+    @SuppressWarnings("unchecked")
     public static boolean isValidSudokuD(char[][] board) {
         Set<Character>[] rows = new HashSet[9];
         Set<Character>[] cols = new HashSet[9];
@@ -94,68 +94,5 @@ public class ValidSudoku {
             }
 
         return true;
-    }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: board =
-        [["5","3",".",".","7",".",".",".","."]
-        ,["6",".",".","1","9","5",".",".","."]
-        ,[".","9","8",".",".",".",".","6","."]
-        ,["8",".",".",".","6",".",".",".","3"]
-        ,["4",".",".","8",".","3",".",".","1"]
-        ,["7",".",".",".","2",".",".",".","6"]
-        ,[".","6",".",".",".",".","2","8","."]
-        ,[".",".",".","4","1","9",".",".","5"]
-        ,[".",".",".",".","8",".",".","7","9"]]
-        Output: true
-        */
-        char[][] input1 = {
-                {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '7', '9'},
-        };
-        boolean output1 = true;
-        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(isValidSudokuD(input1)));
-
-        /*
-        Example 2:
-
-        Input: board =
-        [["8","3",".",".","7",".",".",".","."]
-        ,["6",".",".","1","9","5",".",".","."]
-        ,[".","9","8",".",".",".",".","6","."]
-        ,["8",".",".",".","6",".",".",".","3"]
-        ,["4",".",".","8",".","3",".",".","1"]
-        ,["7",".",".",".","2",".",".",".","6"]
-        ,[".","6",".",".",".",".","2","8","."]
-        ,[".",".",".","4","1","9",".",".","5"]
-        ,[".",".",".",".","8",".",".","7","9"]]
-        Output: false
-        Explanation: Same as Example 1, except with the 5 in
-        the top left corner being modified to 8. Since there
-        are two 8's in the top left 3x3 sub-box, it is invalid.
-         */
-        char[][] input2 = {
-                {'8', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '7', '9'},
-        };
-        boolean output2 = false;
-        TestClass.showOutput(2, String.valueOf(output2), String.valueOf(isValidSudoku(input2)));
     }
 }

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class ValidAnagramTest {
 
     @Test
-    void isAnagram_correctAnagram_True() {
+    void isAnagram_correctAnagram_true() {
         String s = "anagram";
         String t = "nagaram";
 
@@ -16,7 +16,7 @@ public class ValidAnagramTest {
     }
 
     @Test
-    void isAnagram_incorrectAnagram_False() {
+    void isAnagram_incorrectAnagram_false() {
         String s = "rat";
         String t = "car";
 
