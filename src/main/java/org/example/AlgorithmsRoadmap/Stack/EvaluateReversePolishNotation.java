@@ -1,7 +1,5 @@
 package org.example.AlgorithmsRoadmap.Stack;
 
-import org.example.TestClass;
-
 import java.util.Stack;
 
 public class EvaluateReversePolishNotation {
@@ -43,46 +41,5 @@ public class EvaluateReversePolishNotation {
         }
 
         return stack.pop();
-    }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: tokens = ["2","1","+","3","*"]
-        Output: 9
-        Explanation: ((2 + 1) * 3) = 9
-        */
-        String[] tokens1 = {"2", "1", "+", "3", "*"};
-        int output1 = 9;
-        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(evalRPN(tokens1)));
-
-        /*
-        Example 2:
-
-        Input: tokens = ["4","13","5","/","+"]
-        Output: 6
-        Explanation: (4 + (13 / 5)) = 6
-        */
-        String[] tokens2 = {"4", "13", "5", "/", "+"};
-        int output2 = 6;
-        TestClass.showOutput(2, String.valueOf(output2), String.valueOf(evalRPN(tokens2)));
-
-        /*
-        Example 3:
-
-        Input: tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
-        Output: 22
-        Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
-        = ((10 * (6 / (12 * -11))) + 17) + 5
-        = ((10 * (6 / -132)) + 17) + 5
-        = ((10 * 0) + 17) + 5
-        = (0 + 17) + 5
-        = 17 + 5
-        = 22
-         */
-        String[] tokens3 = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
-        int output3 = 22;
-        TestClass.showOutput(3, String.valueOf(output3), String.valueOf(evalRPN(tokens3)));
     }
 }
