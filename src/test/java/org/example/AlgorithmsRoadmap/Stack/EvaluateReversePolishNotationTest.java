@@ -37,8 +37,8 @@ public class EvaluateReversePolishNotationTest {
                 = 17 + 5
                 = 22
         */
-        String[] tokens = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"};
-        int output = 22;
+        String[] tokens = {"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "-"};
+        int output = 12;
         assertEquals(output,
                 EvaluateReversePolishNotation.evalRPN(tokens)
         );
