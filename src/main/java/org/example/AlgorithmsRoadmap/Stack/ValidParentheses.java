@@ -1,7 +1,5 @@
 package org.example.AlgorithmsRoadmap.Stack;
 
-import org.example.TestClass;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
@@ -40,47 +38,5 @@ public class ValidParentheses {
         }
 
         return stack.empty();
-    }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: s = "()"
-        Output: true
-        */
-        String input1 = "()";
-        boolean output1 = true;
-        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(isValid(input1)));
-
-        /*
-        Example 2:
-
-        Input: s = "()[]{}"
-        Output: true
-         */
-        String input2 = "()[]{}";
-        boolean output2 = true;
-        TestClass.showOutput(2, String.valueOf(output2), String.valueOf(isValid(input2)));
-
-        /*
-        Example 3:
-
-        Input: s = "(]"
-        Output: false
-         */
-        String input3 = "(]";
-        boolean output3 = false;
-        TestClass.showOutput(3, String.valueOf(output3), String.valueOf(isValid(input3)));
-
-        /*
-        Example 4:
-
-        Input: s = "]"
-        Output: false
-         */
-        String input4 = "]";
-        boolean output4 = false;
-        TestClass.showOutput(4, String.valueOf(output4), String.valueOf(isValid(input4)));
     }
 }
