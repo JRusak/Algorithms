@@ -1,7 +1,6 @@
 package org.example.AlgorithmsRoadmap.Stack;
 
 import org.example.Nodes.BracketsNode;
-import org.example.TestClass;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,36 +67,5 @@ public class GenerateParentheses {
         List<String> combinations = new ArrayList<>();
         backtrack(combinations, 0, 0, "", n);
         return combinations;
-    }
-
-    public static void main(String[] args) {
-        /*
-        Example 1:
-
-        Input: n = 3
-        Output: ["((()))","(()())","(())()","()(())","()()()"]
-        */
-        int input1 = 3;
-        List<String> output1 = new ArrayList<>() {{
-            add("((()))");
-            add("(()())");
-            add("(())()");
-            add("()(())");
-            add("()()()");
-        }};
-        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(generateParenthesis(input1)));
-        TestClass.showOutput(1, String.valueOf(output1), String.valueOf(generateParenthesisB(input1)));
-
-        /*
-        Example 2:
-
-        Input: n = 1
-        Output: ["()"]
-         */
-        int input2 = 1;
-        List<String> output2 = new ArrayList<>() {{
-            add("()");
-        }};
-        TestClass.showOutput(2, String.valueOf(output2), String.valueOf(generateParenthesis(input2)));
     }
 }
